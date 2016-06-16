@@ -253,9 +253,13 @@ img_send_Board : 서버에서 불러온 이미지 파일, 텍스트파일을 전
 **class E-Board**
 
 char scr_img[1900][1200];
+
 char lettercolor[4] = {“red”, “black”, “green”, “blue”};
+
 int sleep_time;
+
 int distance;
+
 int distance_state;
  
 //칠판에 쓰면 그것을 인식
@@ -275,23 +279,38 @@ void img_save(){}
 
 //칠판에 인식된 것들을 시간에 맞추어 저장
 void img_save_time(int sleep_time=5){
+
    sleep(sleep_time);
+
    void img_save();
+
 }
 
 //칠판에 인식된 것들을 거리에 맞추어 저장
 void img_save_distance(int space, int distance = 5, int distancestate = 0){
+
    if(space>=distance)
+ 
    {
+
       distancestate=1;
+
       if(distancestate==1)
+
       void img_save();
+ 
       distancestate=2;
+ 
    }
+ 
    If(space<distance)
+ 
    {
+ 
       distancestate=0;
+ 
    }
+
 }
 
 //Lecture_PC로 저장된 이미지를 전송
@@ -300,7 +319,9 @@ void img_send(){}
 **class Lecture_PC**
 
 char scr_img[100][1900][1200]=NULL;
+
 char img_compare[2][1900][1200]=NULL;
+
 int compare_state;
 
 // E-Board에서 보낸 이미지를 받는 함수
@@ -308,10 +329,15 @@ void img_receive(char img[1900][1200]){}
 
 //받은 이미지를 저장하는 함수
 void img_save(char img[1900][1200]){
+
    if(img_compare[0][1900][1200] == NULL)
+
       img_compare[0][1900][1200] = img[1900][1200];
+
    else
+
       img_compare[1][1900][12000] = img[1900][1200]; 
+
 }
 
 //img_compare[][][]에 저장되어있는 두 이미지를 비교한다.
@@ -335,8 +361,11 @@ void img_delete(int compare_state, char img_compare[2][1900][1200])
 
 //최종 이미지를 저장한다.
 img_save_final(char scr_img[100][1900][1200], char img_final[1900][1200]){int i = 0;
+
 scr_img[i][1900][1200] = img_final[1900][1200];
-i++;
+
+++;
+
 }
 
 //scr_img[][][]에 저장되어 있는 이미지를 파일로 저장
