@@ -189,3 +189,25 @@
 <p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142347216.png?raw=true)
 
 <p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160601_202230103.png?raw=true)
+
+**변수**
+**클래스 E_Board**
+
+scr_img[1900][1200] : 칠판에 쓰는 모든 글씨, 문자, 그림들을 저장하는 가로1900 x 세로1200 해상도로 구성되어 있는 image matrix
+
+lettercolor : 검정, 빨강, 초록, 파랑색을 선택 할 수 있게 저장하는 matrix
+
+sleep_time : sleep함수에 들어갈 시간을 저장하는 변수
+
+distance : 어느 정도 거리가 떨어졌을 때 저장할지를 정하는 변수
+
+distance_state : 거리의 상태를 표기한다. 예를 들어 거리를 5m로 지정했다고 하자. 그러면 5m안일 때 상태는 0, 5m밖일 때 저장하기 전 상태는 1, 5m밖이어서 저장을 한 후에는 2로 표기한다.  
+
+**클래스 Lecture_PC**
+scr_img[100][1900][1200] : 전자칠판에서 받은 최종 이미지들을 저장하는 image matrix
+
+img_compare[2][1900][1200] : 전자칠판에서 받은 이미지들을 비교할 수 있게 저장하는 image_matrix
+
+compare_state : 두 이미지들을 비교해서 조금이라도 다르면 뒤에 들어온 이미지를 저장한다. 100%다르면 앞에 있는 이미지를 최종 저장하고 새로 들어온 이미지를 비교대상에 넣는다.
+
+
