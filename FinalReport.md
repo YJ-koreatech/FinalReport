@@ -454,21 +454,32 @@ void img_send_Board(){}
 
 2. 강의실 PC : 
     CPU : Intel Core I7 6790
+
     Memory : 16GB DDR4
+
     HDD : 2TB
+
     OS : Windows 10
+
     Network Interface : Olleh KT Giga Internet
     
 3. 서버
     CPU : 인텔 제온 E5-2697V3 (하스웰-EP)	
+
     Memory : 512GB
+
     HDD : WD 8TB PURPLE WD80PUZX (SATA3/5400/128M)
+
     OS : Windows Server 2012 R2
+
     Network Interface : Cehlsio Server Lan Card(T520-SO-CR/S1)
 4. 개인 PC
     CPU : 인텔 펜티엄 G4400 (스카이레이크)	
+
     Memory : 2GB
+
     SSD : 128GB
+
     OS : Windows 10
 
 
