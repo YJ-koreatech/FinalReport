@@ -179,3 +179,7 @@
  ➂ 서버
 
 <p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142341058.png?raw=true)
+
+ ➃ 개인 PC
+
+<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142343387.png?raw=true)
