@@ -141,3 +141,27 @@
  이미 앞에서도 소개했던 바와 같이 컴퓨터 모니터에 기록하고, 삼성 갤럭시 s노트 등을 이용해서 칠판을 대신해 사용할 수 있는 대체품이 많이 나와 있음에도 교수님들이 칠판에 판서를 하는 데에는 여러 가지 이유가 존재한다. 판서하는 것이 그만큼 더 편리하기 때문이다. 그래서 우리는 다른 도구를 거쳐 나와서 칠판에 판서가 표기되는 것이 아닌 칠판에 직접 판서를 해서 학생들이 볼 수 있도록 하는 시스템이 적용되어야 한다고 생각했다.
  
 위 두 가지의 기존 전자 칠판과의 차별성이 우리가 새롭게 설계한 전자 칠판이 훨씬 더 편리하게 사용될 수 있도록 만들어준다.
+
+
+#6. 전체 시스템 구조 설계
+**1) 시스템 구조**
+
+<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142259475.png?raw=true)
+[그림6] 전체 시스템 메카니즘
+
+<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142302135.png?raw=true)
+[그림7] 수업 중의 시스템 구조
+
+<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142305346.png?raw=true)
+[그림8] 수업 중의 시스템 구조
+
+<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142308249.png?raw=true)
+[그림9] 수업이 종료된 후의 시스템 구조
+
+<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142311604.png?raw=true)
+[그림10] 전체 시스템 구조
+
+**2) 시스템의 기능**
+
+<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142315397.png?raw=true)
+[그림11] 시스템의 상호작용 및 기능
