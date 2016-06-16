@@ -385,9 +385,3 @@ void img_send_Board(){}
 
 
 
-|	E_Borad	|	Lecture_PC	|	Server	|	PC	|
-
-|	scr_img[][] : Mat lettercolor : Mat sleep_time : Int distance : Int distance_state : Int	|	scr_img[][][] : Mat img_compar[][][] : Mat compare_state : Int	|		|		|
-
-|	letter_recognition letter_color letter_erase letter_print img_save img_save_time (sleep) img_save_distance img_send	|	img_receive img_save img_compare img_delete img_save_final img_file img_to_text img_upload_server img_call img_send_Board	|	file_receive file_upload file_save	|	file_download
-contact	|
