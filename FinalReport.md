@@ -190,6 +190,8 @@
 
 <p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160601_202230103.png?raw=true)
 
+#7. 핵심 구성 요소 상세 설계#
+
 **변수**
 **클래스 E_Board**
 
