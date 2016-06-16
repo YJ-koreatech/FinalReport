@@ -278,7 +278,8 @@ void letter_print(){}
 void img_save(){}
 
 //칠판에 인식된 것들을 시간에 맞추어 저장
-void img_save_time(int sleep_time=5){
+void img_save_time(int sleep_time=5)
+{
 
    sleep(sleep_time);
 
@@ -371,7 +372,10 @@ void img_delete(int compare_state, char img_compare[2][1900][1200])
 }
 
 //최종 이미지를 저장한다.
-img_save_final(char scr_img[100][1900][1200], char img_final[1900][1200]){int i = 0;
+img_save_final
+(char scr_img[100][1900][1200], char img_final[1900][1200])
+{
+int i = 0;
 
 scr_img[i][1900][1200] = img_final[1900][1200];
 
