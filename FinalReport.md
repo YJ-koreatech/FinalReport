@@ -210,4 +210,147 @@ img_compare[2][1900][1200] : 전자칠판에서 받은 이미지들을 비교할
 
 compare_state : 두 이미지들을 비교해서 조금이라도 다르면 뒤에 들어온 이미지를 저장한다. 100%다르면 앞에 있는 이미지를 최종 저장하고 새로 들어온 이미지를 비교대상에 넣는다.
 
+**함수**
+**클래스 E_Board**
+
+letter_recognition : 전자펜과 전자지우개를 칠판에 쓰면 그것을 인식하는 함수이다.
+
+letter_color : lettercolor[4]에 저장된 검정, 빨강, 초록, 파랑색중 하나를 선택해 쓸 수 있게 해주는 함수이다.
+
+letter_erase : 전자지우개를 쓰면 그 부분을 지우게 하고, 전자칠판에 있는 지우기 버튼을 누르면 칠판 전체를 지우개 한다.
+
+letter_print : 전자펜을 인식해 그것을 쓰는 대로 출력하는 함수이다.
+
+img_save : 칠판에 인식된 것들을 저장하는 함수이다.
+
+img_save_time : sleep함수를 이용해 sleep_time변수에 저장되어 있는 시간에 따라 img_save함수를 이용해 이미지를 저장하는 함수이다.
+
+img_save_distance : distance변수에 저장되어 있는 거리에 따라 distance_state변수에 저장되어있는 상태가 변한다. 그 상태에 따라 img_save함수를 이용해 이미지를 저장하는 함수이다.
+
+img_send : 저장된 이미지를 Lecture_PC에 보내는 함수이다.
+
+클래스 Lecture_PC
+img_receive : E_Board에서 보낸 이미지를 받는 함수이다.
+
+img_save : E_Board에서 받은 이미지를 img_compare[2][1900][1200]배열에 저장을 한다. 비교당할 이미지는 img_compare[0][1900][1200]배열에 저장하고 비교할 이미지는 img_compare[1][1900][1200]배열에 저장한다.
+
+img_compare : img_compare[][][]에 저장되어있는 두 이미지를 비교하여 compare_state변수에 그 차이를 저장한다.
+
+img_delete : 두 이미지를 비교해 0%<compare_state<100%이면 뒤에 있는 이미지를 앞에 저장을 한다. compare_state=0%이면 아무것도 하지 않는다. compare_state=100%이면 img_save_final함수를 실행시키고 img_compare[][][]를 0으로 초기화 시킨다.
+
+img_save_final : img_delet함수에서 이 함수를 실행시키면 scr_img[][][]에 차례대로 이미지들을 저장한다.
+
+img_file : sccr_img[][][]에 저장되어 있는 이미지를 파일로 저장한다.
+img_to_text : scr_img[][][]에 저장되어 있는 이미지를 텍스트파일(docx)로 변환시켜 저장한다.
+
+img_upload_server : 이미지 파일이랑 텍스트파일을 서버로 업로드 시킨다.
+
+img_call : 서버에 있는 이미지 파일이랑 텍스트파일을 불러온다.
+
+img_send_Board : 서버에서 불러온 이미지 파일, 텍스트파일을 전자칠판에 보낸다.
+
+**수도코드**
+**class E-Board**
+
+char scr_img[1900][1200];
+char lettercolor[4] = {“red”, “black”, “green”, “blue”};
+int sleep_time;
+int distance;
+int distance_state;
+ 
+//칠판에 쓰면 그것을 인식
+void letter_recognition(){}
+
+//색을 선택 할 수 있는 함수
+void letter_color(){}
+
+//letter_recognition에서 전자지우개로 인식된 것이 있으면 그것을 지움
+void letter_erase(){}
+
+//letter_recognition에서 전자펜으로 인식된 것이 있으면 그것을 출력
+void letter_print(){}
+
+//칠판에 인식된 것들을 저장
+void img_save(){}
+
+//칠판에 인식된 것들을 시간에 맞추어 저장
+void img_save_time(int sleep_time=5){
+   sleep(sleep_time);
+   void img_save();
+}
+
+//칠판에 인식된 것들을 거리에 맞추어 저장
+void img_save_distance(int space, int distance = 5, int distancestate = 0){
+   if(space>=distance)
+   {
+      distancestate=1;
+      if(distancestate==1)
+      void img_save();
+      distancestate=2;
+   }
+   If(space<distance)
+   {
+      distancestate=0;
+   }
+}
+
+//Lecture_PC로 저장된 이미지를 전송
+void img_send(){}
+
+**class Lecture_PC**
+
+char scr_img[100][1900][1200]=NULL;
+char img_compare[2][1900][1200]=NULL;
+int compare_state;
+
+// E-Board에서 보낸 이미지를 받는 함수
+void img_receive(char img[1900][1200]){}
+
+//받은 이미지를 저장하는 함수
+void img_save(char img[1900][1200]){
+   if(img_compare[0][1900][1200] == NULL)
+      img_compare[0][1900][1200] = img[1900][1200];
+   else
+      img_compare[1][1900][12000] = img[1900][1200]; 
+}
+
+//img_compare[][][]에 저장되어있는 두 이미지를 비교한다.
+void img_compare(char img_compare[2][1900][1200])
+{
+   비교코드;
+   compare_state = compare결과
+}
+
+//두 이미지를 비교해 필요없는 것은 삭제한다
+void img_delete(int compare_state, char img_compare[2][1900][1200])
+{
+   if(compare_state<100 || compare_state>0)
+      img_compare[0][1900][1200] = img_compare[1][1900][1200];
+   if(compare_state=0)
+   {
+      img_save_final();’
+      img_compare[0][1900][1200]=NULL’
+   }   
+}
+
+//최종 이미지를 저장한다.
+img_save_final(char scr_img[100][1900][1200], char img_final[1900][1200]){int i = 0;
+scr_img[i][1900][1200] = img_final[1900][1200];
+i++;
+}
+
+//scr_img[][][]에 저장되어 있는 이미지를 파일로 저장
+void img_file(char scr_img[][][]){}
+
+//scr_img[][][]에 저장되어 잇는 이미지를 텍스트 파일(docx)로 변환
+void img_to_text(char scr_img[][][]){}
+
+//이미지 파일, 텍스트파일을 서버로 업로드
+void img_upload_server(){}
+
+//서버에 있는 이미지 파일, 텍스트파일 호출
+void img_call(){}
+
+// 서버에서 불러온 이미지파일, 텍스트파일을 전자칠판에 전송
+void img_send_Board(){}
 
