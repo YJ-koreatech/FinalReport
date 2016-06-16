@@ -287,7 +287,8 @@ void img_save_time(int sleep_time=5){
 }
 
 //칠판에 인식된 것들을 거리에 맞추어 저장
-void img_save_distance(int space, int distance = 5, int distancestate = 0){
+void img_save_distance(int space, int distance = 5, int distancestate = 0)
+{
 
    if(space>=distance)
  
@@ -328,7 +329,8 @@ int compare_state;
 void img_receive(char img[1900][1200]){}
 
 //받은 이미지를 저장하는 함수
-void img_save(char img[1900][1200]){
+void img_save(char img[1900][1200])
+{
 
    if(img_compare[0][1900][1200] == NULL)
 
@@ -349,14 +351,23 @@ void img_compare(char img_compare[2][1900][1200])
 
 //두 이미지를 비교해 필요없는 것은 삭제한다
 void img_delete(int compare_state, char img_compare[2][1900][1200])
+
 {
+
    if(compare_state<100 || compare_state>0)
+
       img_compare[0][1900][1200] = img_compare[1][1900][1200];
+
    if(compare_state=0)
+
    {
+
       img_save_final();’
+
       img_compare[0][1900][1200]=NULL’
+
    }   
+
 }
 
 //최종 이미지를 저장한다.
