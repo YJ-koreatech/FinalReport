@@ -453,6 +453,7 @@ void img_send_Board(){}
 1. 칠판 : LED 패널이 부착된 스크린
 
 2. 강의실 PC : 
+
     CPU : Intel Core I7 6790
 
     Memory : 16GB DDR4
@@ -464,6 +465,7 @@ void img_send_Board(){}
     Network Interface : Olleh KT Giga Internet
     
 3. 서버
+
     CPU : 인텔 제온 E5-2697V3 (하스웰-EP)	
 
     Memory : 512GB
@@ -474,6 +476,7 @@ void img_send_Board(){}
 
     Network Interface : Cehlsio Server Lan Card(T520-SO-CR/S1)
 4. 개인 PC
+
     CPU : 인텔 펜티엄 G4400 (스카이레이크)	
 
     Memory : 2GB
