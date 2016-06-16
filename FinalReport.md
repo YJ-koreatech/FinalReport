@@ -155,7 +155,7 @@
 <p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142305346.png?raw=true)
 [그림8] 수업 중의 시스템 구조
 
-<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142308249.png?raw=true)
+ <p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142308249.png?raw=true)
 [그림9] 수업이 종료된 후의 시스템 구조
 
 <p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142311604.png?raw=true)
