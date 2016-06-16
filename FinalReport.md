@@ -165,3 +165,17 @@
 
 <p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142315397.png?raw=true)
 [그림11] 시스템의 상호작용 및 기능
+
+
+**3) 시스템의 구성 요소 및 각 구성 요소의 기능, 입출력 데이터**
+
+ ➀ 전자 칠판
+<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142320662.png?raw=true)
+
+ ➁ 강의실 PC
+
+<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142330577.png?raw=true)
+
+ ➂ 서버
+
+<p align="center">![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160610_142341058.png?raw=true)
