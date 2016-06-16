@@ -420,15 +420,13 @@ void img_send_Board(){}
 
 
 |	E_Board	|	Lecture_PC	|	Server	|	PC	|
-|	----	|	----	|	----	|	----	|
-|	----	|	----	|	----	|	----	|
+|---------|---------|---------|---------|
 |	scr_img[][] : Mat	|	scr_img[][][] : Mat	|		|		|
 |	lettercolor : Mat	|		|		|		|
 |	sleep_time : Int	|	img_compar[][][] : Mat	|		|		|
 |	distance : Int	|		|		|		|
 |	distance_state : Int	|	compare_state : Int	|		|		|
-|	----	|	----	|	----	|	----	|
-|	----	|	----	|	----	|	----	|
+|---------|---------|---------|---------|
 |	letter_recognition	|	img_receive	|	file_receive	|	file_download	|
 |	letter_color	|	img_save	|		|		|
 |	letter_erase	|	img_compare	|		|		|
@@ -439,4 +437,3 @@ void img_send_Board(){}
 |	img_send	|	img_upload_server	|		|		|
 |		|	img_call	|		|		|
 |		|	img_send_Board	|	file_save	|		|
-|	----	|	----	|	----	|	----	|
