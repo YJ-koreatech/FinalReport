@@ -426,6 +426,52 @@ void img_call(){}
 // 서버에서 불러온 이미지파일, 텍스트파일을 전자칠판에 전송
 void img_send_Board(){}
 
+
+#8. 구현에 필요한 기술 및 개발 환경에 대한 조사
+
+**1) 구현에 필요한 기술**
+
+ 1. 칠판 내용 캡쳐하는 기술
+   -- Windows Media API for capturing the screen
+    Windows Media 9.0은 Windows Media Encoder 9 API로 스크린 캡쳐를 지원한다. Windows Media Encoder API는 스크린 내용을 보다 효율적으로 캡쳐하는데 사용되는 인터페이스 IWMEncoder2를 제공한다.
+
+ 2. 칠판 내용(글씨) 인식 기술 - 그림 글씨 인식
+   - MSER(Maximally stable extremal) regions 기술 사용
+    1. Bin sort를 수행하여 Intensity 값이 낮은 순으로 정렬.
+    2. 트리를 생성한다.
+    3. Extermal Region 후보를 찾는다.
+    4. 강건한 Extermal Region을 골라낸다.
+    5. 크기 등의 조건을 통해, 불필요한 Extermal Region은 제거한다.
+
+![](https://github.com/YJ-koreatech/FinalReport/blob/master/Final%20Report/KakaoTalk_20160601_202229576.png?raw=true)
+3. S펜 같은 도구를 인식하는 기술
+   - Wacom Dual Digitizer
+    Wacom Dual Digitizer란, 정밀한 EMR 디지털 펜과 스크린 아래의 digitizer 층으로 부      터 전기 용량적 멀티-터치와 액티브 펜의 입력을 지원한다. 간단히 말해, Wacom 기술      을 적용한다.
+
+**2) 개발 환경에 대한 조사**
+ 
+1. 칠판 : LED 패널이 부착된 스크린
+
+2. 강의실 PC : 
+    CPU : Intel Core I7 6790
+    Memory : 16GB DDR4
+    HDD : 2TB
+    OS : Windows 10
+    Network Interface : Olleh KT Giga Internet
+    
+3. 서버
+    CPU : 인텔 제온 E5-2697V3 (하스웰-EP)	
+    Memory : 512GB
+    HDD : WD 8TB PURPLE WD80PUZX (SATA3/5400/128M)
+    OS : Windows Server 2012 R2
+    Network Interface : Cehlsio Server Lan Card(T520-SO-CR/S1)
+4. 개인 PC
+    CPU : 인텔 펜티엄 G4400 (스카이레이크)	
+    Memory : 2GB
+    SSD : 128GB
+    OS : Windows 10
+
+
 #9. 과제 수행 내용에 대한 각자 의견 및 소감#
 
 1. 2013136007 권기범
