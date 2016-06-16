@@ -419,3 +419,24 @@ void img_send_Board(){}
  학교를 다니면서 여러 불편한 점이 존재하고 있었지만 그것을 실제로 어떻게 하면 더 편하게 바꿀 수 있을 지에 대해서는 잘 생각해보지 않았었다. 수학 수업을 들으면서 교수님의 필기를 따라가는 것은 실제로 많은 학생들이 어려워하는 부분이다. 잠깐 동안만 집중력이 흐트러져도 수업 내용 이해 자체가 어려워지기 때문이다. 이러한 문제를 실제로 해결할 수 있는 방안 자체를 조원들과 함께 직접 만들어보았다는 것이 매우 놀라웠다. 미래에는 이러한 전자 칠판이 실제로 사용될 수 있다면 매우 기쁠 것 같다는 생각이 들었다. 이러한 시스템을 만들기 위해서 상세설계를 진행하였는데 이 과정에서 설계의 어려움을 많이 느꼈다. 모든 부분을 각각 설계해야하고 각각의 부분이 서로 어떻게 맞물려 작동하는 지에 대해서도 전부 알아내야했다. 앞으로 시스템 설계를 할 때 이번 경험이 많은 도움이 될 것 같았다. 마지막으로 실제로 인터넷에서 기존의 제품이나 아이디어를 찾아보았는데 처음에 찾아볼 때는 큰 개념만을 가지고 찾아보아서 많은 내용을 찾아낼 수는 없었지만 점점 상세설계를 진행하면서 부분적으로 필요한 것을 찾아 볼 때는 최신 IT 기술이나 제품들도 많이 볼 수가 있었다. 실제로 신기했던 기술들이 굉장히 많이 있었다. 앞으로도 최신 기술들을 찾아볼 것이다.
 
 
+|	E_Board	|	Lecture_PC	|	Server	|	PC	|
+|	----	|	----	|	----	|	----	|
+|	----	|	----	|	----	|	----	|
+|	scr_img[][] : Mat	|	scr_img[][][] : Mat	|		|		|
+|	lettercolor : Mat	|		|		|		|
+|	sleep_time : Int	|	img_compar[][][] : Mat	|		|		|
+|	distance : Int	|		|		|		|
+|	distance_state : Int	|	compare_state : Int	|		|		|
+|	----	|	----	|	----	|	----	|
+|	----	|	----	|	----	|	----	|
+|	letter_recognition	|	img_receive	|	file_receive	|	file_download	|
+|	letter_color	|	img_save	|		|		|
+|	letter_erase	|	img_compare	|		|		|
+|	letter_print	|	img_delete	|		|		|
+|	img_save	|	img_save_final	|	file_upload	|	contact	|
+|	img_save_time(sleep)	|	img_file	|		|		|
+|	img_save_distance	|	img_to_text	|		|		|
+|	img_send	|	img_upload_server	|		|		|
+|		|	img_call	|		|		|
+|		|	img_send_Board	|	file_save	|		|
+|	----	|	----	|	----	|	----	|
